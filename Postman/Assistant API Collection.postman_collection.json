@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "bf3f98d0-6513-4784-afa7-5a7e966f9609",
+		"name": "Assistant API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34655522"
+	},
+	"item": [
+		{
+			"name": "Create Assistant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sanika Patil\",\r\n  \"mobile\": \"1234565550\",\r\n  \"email\": \"sanika@example.com\",\r\n  \"salary\": 40000,\r\n  \"city\": \"Pune\",\r\n  \"country\": \"India\",\r\n  \"department\": \"Engineering\",\r\n  \"role\": \"Software Engineer\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/assistants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"assistants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Assistants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/assistants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"assistants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Assistant by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/assistants/66465767d0efeb628cc07640",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"assistants",
+						"66465767d0efeb628cc07640"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Assistant by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Manasi Sankpal\",\r\n  \"mobile\": \"0987654321\",\r\n  \"email\": \"manasi.updated@example.com\",\r\n  \"salary\": 60000,\r\n  \"city\": \"Mumbai\",\r\n  \"country\": \"India\",\r\n  \"department\": \"Product Management\",\r\n  \"role\": \"Product Manager\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/assistants/66465767d0efeb628cc07640",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"assistants",
+						"66465767d0efeb628cc07640"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Assistant by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/assistants/66465767d0efeb628cc07640",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"assistants",
+						"66465767d0efeb628cc07640"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
